@@ -41,15 +41,16 @@
             buttonEight = new Button();
             buttonNine = new Button();
             buttonZero = new Button();
+            buttonEqual = new Button();
+            TxtResult = new TextBox();
             SuspendLayout();
             // 
             // TxtExibition
             // 
             TxtExibition.Location = new Point(12, 12);
             TxtExibition.Name = "TxtExibition";
-            TxtExibition.Size = new Size(630, 27);
+            TxtExibition.Size = new Size(409, 27);
             TxtExibition.TabIndex = 0;
-            TxtExibition.KeyDown += TxtExibition_KeyDown;
             // 
             // SumButton
             // 
@@ -59,6 +60,7 @@
             SumButton.TabIndex = 1;
             SumButton.Text = "+";
             SumButton.UseVisualStyleBackColor = true;
+            SumButton.Click += SumButton_Click;
             // 
             // LessButton
             // 
@@ -169,11 +171,31 @@
             buttonZero.UseVisualStyleBackColor = true;
             buttonZero.Click += buttonZero_Click;
             // 
+            // buttonEqual
+            // 
+            buttonEqual.Location = new Point(427, 12);
+            buttonEqual.Name = "buttonEqual";
+            buttonEqual.Size = new Size(35, 27);
+            buttonEqual.TabIndex = 13;
+            buttonEqual.Text = "=";
+            buttonEqual.UseVisualStyleBackColor = true;
+            buttonEqual.Click += buttonEqual_Click;
+            // 
+            // TxtResult
+            // 
+            TxtResult.Location = new Point(468, 12);
+            TxtResult.Name = "TxtResult";
+            TxtResult.ReadOnly = true;
+            TxtResult.Size = new Size(174, 27);
+            TxtResult.TabIndex = 14;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(654, 450);
+            Controls.Add(TxtResult);
+            Controls.Add(buttonEqual);
             Controls.Add(buttonZero);
             Controls.Add(buttonNine);
             Controls.Add(buttonEight);
@@ -208,5 +230,7 @@
         private Button buttonEight;
         private Button buttonNine;
         private Button buttonZero;
+        private Button buttonEqual;
+        private TextBox TxtResult;
     }
 }

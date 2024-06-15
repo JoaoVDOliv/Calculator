@@ -59,6 +59,16 @@ namespace Calculator
         private void buttonZero_Click(object sender, EventArgs e)
         {
             this.TxtExibition.Text += "0";
-        }                
+        }
+
+        private void SumButton_Click(object sender, EventArgs e)
+        {
+            this.TxtExibition.Text += "+";
+        }
+
+        private void buttonEqual_Click(object sender, EventArgs e)
+        {
+            this.TxtResult.Text = this.TxtExibition.Text;
+        }        
     }
 }

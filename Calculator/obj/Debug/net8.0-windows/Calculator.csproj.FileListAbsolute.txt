@@ -14,3 +14,4 @@ C:\Users\olivd\Desktop\Projects\Calculator\Calculator\obj\Debug\net8.0-windows\r
 C:\Users\olivd\Desktop\Projects\Calculator\Calculator\obj\Debug\net8.0-windows\Calculator.pdb
 C:\Users\olivd\Desktop\Projects\Calculator\Calculator\obj\Debug\net8.0-windows\Calculator.genruntimeconfig.cache
 C:\Users\olivd\Desktop\Projects\Calculator\Calculator\obj\Debug\net8.0-windows\ref\Calculator.dll
+C:\Users\olivd\Desktop\Projects\Calculator\Calculator\obj\Debug\net8.0-windows\Calculator.sourcelink.json
